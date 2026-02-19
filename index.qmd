@@ -2,20 +2,8 @@
 title: Preface
 ---
 
-::::::::: columns
-:::: {.column width="45%"}
-::: {style="text-align: center;"}
-![](images/ds4e-main-logo.png){height="120px" fig-cap="" style="margin-top: 10px;"}
-:::
-::::
-
-:::: {.column width="45%"}
-::: {style="text-align: center;"}
-![](images/course-kata-logo.png){height="80px" fig-cap="" style="margin-top: 22px;"}
-:::
-::::
+![Designed by Freepik](images/cover-image.jpg)
 
 This resource is intended for high school computer science teachers seeking to extend student learning beyond AP Computer Science courses. It provides a teacher-facing guide for the After the AP Capstone.
 
-The materials for the capstone are designed for students who have completed AP Computer Science Principles or AP Computer Science A, or who have comparable experience with text-based programming.
-:::::::::
+The materials for the capstone are designed for students who have completed AP Computer Science Principles or AP Computer Science A, or who have comparable experience with text-based programming. :::::::::
