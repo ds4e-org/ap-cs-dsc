@@ -1,11 +1,26 @@
 from pathlib import Path
 import urllib.request as u
 
-def get_data(url, filename, folder=".local/share/data"):
-    path = Path.home() / folder / filename
-    path.parent.mkdir(parents=True, exist_ok=True)
+def get_data(
+    filename,
+    base_url="https://raw.githubusercontent.com/ds4e-org/ap-cs-dsc/main/data/",
+    folder="data"
+):
+    folder_path = Path(folder)
+    path = folder_path / filename
 
-    if not path.exists():
+    # Check if folder exists
+    if not folder_path.exists():
+        print(f"Creating folder: {folder_path}")
+        folder_path.mkdir(parents=True)
+
+    # Check if file exists
+    if path.exists():
+        print(f"File already exists: {path}")
+    else:
+        url = base_url + filename
+        print(f"Downloading {filename}...")
         u.urlretrieve(url, path)
+        print(f"Saved to {path}")
 
     return path
