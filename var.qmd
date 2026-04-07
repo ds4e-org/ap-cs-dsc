@@ -11,7 +11,7 @@ Unless otherwise noted, variables are available for survey years 1987, 1993, 200
 :::
 
 | Variable Name | Description |
-|----|----|
+|------------------------------------|------------------------------------|
 | `id` | Respondent ID number |
 | `birth_year` | Respondent’s year of birth |
 | `survey_year` | Survey year for this respondent |
@@ -64,7 +64,7 @@ Unless otherwise noted, variables are available for survey years 1987, 1993, 200
 This table groups variables by topic area and indicates the survey years in which each variable is available. It can be used to identify which variables support comparisons across time.
 
 | Category | Variable | Years Available |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Identifiers & Administrative** |  |  |
 |  | `id` | All |
 |  | `survey_year` | All |
@@ -130,7 +130,7 @@ This table groups variables by topic area and indicates the survey years in whic
 This table maps each variable to the original survey question and lists the years in which the question was asked. It helps clarify how variables were measured and when they appear in the dataset.
 
 | Variable | Survey Question | Years Asked |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `id` | Administrative identifier; not a survey question. | All |
 | `birth_year` | Derived from age and survey year; not asked directly. | All |
 | `survey_year` | Administrative variable indicating year of interview. | All |
@@ -187,7 +187,7 @@ Some missing values occur because a question was never asked (for example, it wa
 When analyzing the data, these codes should be handled intentionally. In most cases, they should be excluded from summaries and visualizations, rather than treated as valid responses.
 
 | Code | Meaning | Notes & When It Appears |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `NaN` | Missing value (numeric) | Pandas missing value; appears in numeric columns |
 | `.i:  Inapplicable` | Inapplicable | Question does not apply due to skip patterns or survey design |
 | `.n:  No answer` | No answer | Question was asked, but no valid response recorded |
