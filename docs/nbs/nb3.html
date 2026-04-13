@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook 3 Visualizing Distributions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Notebook 3 Visualizing Distributions (Teacher)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7892,7 +7892,7 @@ a.anchor-link {
 <h3>The Dataset (<code style="background-color:transparent">updated_gss.csv</code>)</h3>
 <p><strong>General description:</strong> The <a href="https://gss.norc.org/">General Social Survey (GSS)</a> is a nationally representative survey of adults in the United States that was started in 1972. Conducted by the non-partisan <a href="https://www.norc.org/"> National Opinion Research Center (NORC)</a>, the GSS collects data on a wide variety of topics in contemporary American society, including civil liberties, crime, intergroup tolerance, and social mobility. Its core purpose is to monitor and explain trends in opinions, attitudes, and behaviors.</p>
 <p>The dataset used in this notebook is a subset of the full GSS, containing selected variables and survey years chosen to support instructional exploration and analysis. t also includes a cleaned version of the <code style="background-color:transparent">wwwhr</code> column, with text-based response codes removed, replaced by missing values (<code style="background-color:transparent">(NA)</code>), and remaining values converted to numeric.
-  <p><strong>Description of all variables:</strong> See <a href="https://mahmoudharding.github.io/ap-cs-dsc/var.html">here.</a></p>
+  <p><strong>Description of all variables:</strong> See <a href="https://ds4e-org.github.io/ap-cs-dsc-student/var.html">here.</a></p>
 <p><strong>Detailed data file description:</strong> See <a href="https://docs.google.com/spreadsheets/d/1AC6ZEz_00ZjoBBWrBpAgnybOqzFOsKFX/edit?gid=61928758#gid=61928758">here.</a></p>
 </p></div>
 </div>
@@ -9748,7 +9748,25 @@ The age group with the lowest number of respondents is the <code style="backgrou
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>While these bar charts show total counts for each education level, they do not account for differences in group size. When this is the case, proportions are a better alternative for comparing across groups.</p>
 <p>Using <code>normalize="index"</code> converts each row to proportions, so the values in each row add up to 1. Here, we create a table of proportions using the filtered <code>deg_hap_df</code> <code>DataFrame</code>.</p>
-<p><strong>Note:</strong> Even though the values in each row sum to 1, these proportions reflect only the subset of respondents included after filtering, <strong>not</strong> the full dataset.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=14a0cdfb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="alert alert-block alert-info">
+<strong>Reminder:</strong> Before calculating proportions, we filtered the data to include only the response categories “Not too happy,” “Pretty happy,” and “Very happy.” 
+    <p style="margin-top: 10px;">
+        As a result, even though the values in each row sum to 1, these proportions represent only respondents who selected one of these options, not all respondents in the dataset.
+    </p>
+<p>
+<strong>Interpretation:</strong> When describing your results, be sure to say “among respondents who answered with one of these options,” rather than “all respondents.”
+    </p>
+</div>
 </div>
 </div>
 </div>

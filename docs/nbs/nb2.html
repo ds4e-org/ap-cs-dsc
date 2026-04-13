@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook 2 Pandas and Basic Data Exploration</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Notebook 2 Pandas and Basic Data Exploration (Teacher)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -8568,7 +8568,7 @@ Name: born, Length: 21758, dtype: object</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-info">
-<strong>Instructor Note:</strong> Selecting a single column (for example, <code style="background-color:transparent">gss["age"])</code> returns a <code style="background-color:transparent">Series</code> because Pandas treats it as one variable. When column names are provided as a list (e.g., <code style="background-color:transparent">gss[["age", "educ"]])</code>, Pandas returns a <code style="background-color:transparent">DataFrame</code>, even if the list contains only one column. The type of the output depends on how the columns are requested, not on the values themselves.
+<strong>Instructor Note:</strong> Selecting a single column (for example, <code style="background-color:transparent">gss["age"]</code>) returns a <code style="background-color:transparent">Series</code>. When column names are provided as a list (e.g., <code style="background-color:transparent">gss[["age", "educ"]]</code>), Pandas returns a <code style="background-color:transparent">DataFrame</code>. This is true even if the list contains only one column (e.g., <code style="background-color:transparent">gss[["age"]]</code>). The type of the output depends on how the columns are requested, not on the number of columns selected.
 </div>
 </div>
 </div>
@@ -8596,10 +8596,10 @@ Name: born, Length: 21758, dtype: object</pre>
 <span class="c1"># Create a list of column names to select</span>
 <span class="n">ex_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"birth_year"</span><span class="p">,</span> <span class="s2">"survey_year"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">,</span> <span class="s2">"degree"</span><span class="p">,</span> <span class="s2">"wrkstat"</span><span class="p">]</span>
 
-<span class="c1"># Select certain columns from gss, store into example_df</span>
+<span class="c1"># Select certain columns from gss, store into my_df</span>
 <span class="n">example_df</span> <span class="o">=</span> <span class="n">gss</span><span class="p">[</span><span class="n">ex_cols</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
-<span class="c1"># Display head of example_df</span>
+<span class="c1"># Display head of my_df</span>
 <span class="n">example_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -9358,6 +9358,16 @@ Name: age, Length: 21758, dtype: bool</pre>
 </table>
     The last two rows should be:
     <table class="black-border-table" style="text-align: right;">
+<thead>
+<tr>
+<th></th>
+<th><strong>birth_year</strong></th>
+<th><strong>survey_year</strong></th>
+<th><strong>age</strong></th>
+<th><strong>educ</strong></th>
+<th><strong>happy</strong></th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <th class="alert alert-block alert-success"><span style="color: black;"><strong>21579</strong></span></th>
@@ -9704,6 +9714,16 @@ Name: age, Length: 21758, dtype: bool</pre>
 </table>
     The last two rows should be:
     <table class="black-border-table" style="text-align: right;">
+<thead>
+<tr>
+<th></th>
+<th><strong>birth_year</strong></th>
+<th><strong>survey_year</strong></th>
+<th><strong>age</strong></th>
+<th><strong>educ</strong></th>
+<th><strong>happy</strong></th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <th class="alert alert-block alert-success"><span style="color: black;"><strong>21417</strong></span></th>
@@ -9998,8 +10018,8 @@ Name: age, Length: 21758, dtype: bool</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here</span>
-<span class="n">my_20_to_23_mask</span> <span class="o">=</span> <span class="n">example_df</span><span class="p">[</span><span class="s2">"age"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">])</span>
-<span class="n">example_df</span><span class="p">[</span><span class="n">my_20_to_23_mask</span><span class="p">]</span>
+<span class="n">my_20_to_23_mask</span> <span class="o">=</span> <span class="n">my_df</span><span class="p">[</span><span class="s2">"age"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">])</span>
+<span class="n">my_df</span><span class="p">[</span><span class="n">my_20_to_23_mask</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -10150,8 +10170,8 @@ Name: age, Length: 21758, dtype: bool</pre>
 <th><strong>birth_year</strong></th>
 <th><strong>survey_year</strong></th>
 <th><strong>age</strong></th>
-<th><strong>degree</strong></th>
-<th><strong>wrkstat</strong></th>
+<th><strong>educ</strong></th>
+<th><strong>happy</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -10160,37 +10180,47 @@ Name: age, Length: 21758, dtype: bool</pre>
 <td class="alert alert-block alert-success"><span style="color: black;">1966</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">1987</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">21</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">High school</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">Working full time</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">12th grade</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">Pretty happy</span></td>
 </tr>
 <tr>
 <th class="alert alert-block alert-success"><span style="color: black;"><strong>12</strong></span></th>
 <td class="alert alert-block alert-success"><span style="color: black;">1967</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">1987</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">20</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">High school</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">Unemployed, laid off, looking for work</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">12th grade</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">Very happy</span></td>
 </tr>
 </tbody>
 </table>
     The last two rows should be:
     <table class="black-border-table" style="text-align: right;">
+<thead>
+<tr>
+<th></th>
+<th><strong>birth_year</strong></th>
+<th><strong>survey_year</strong></th>
+<th><strong>age</strong></th>
+<th><strong>educ</strong></th>
+<th><strong>happy</strong></th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <th class="alert alert-block alert-success"><span style="color: black;"><strong>21716</strong></span></th>
 <td class="alert alert-block alert-success"><span style="color: black;">2001</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">2024</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">23</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">High school</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">Unemployed, laid off, looking for work</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">12th grade</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">Pretty happy</span></td>
 </tr>
 <tr>
 <th class="alert alert-block alert-success"><span style="color: black;"><strong>21740</strong></span></th>
 <td class="alert alert-block alert-success"><span style="color: black;">2001</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">2024</span></td>
 <td class="alert alert-block alert-success"><span style="color: black;">22</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">High school</span></td>
-<td class="alert alert-block alert-success"><span style="color: black;">In school</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">12th grade</span></td>
+<td class="alert alert-block alert-success"><span style="color: black;">Not too happy</span></td>
 </tr>
 </tbody>
 </table>
@@ -10557,6 +10587,16 @@ Name: age, Length: 21758, dtype: bool</pre>
 </table>
     The last two rows should be:
     <table class="black-border-table" style="text-align: right;">
+<thead>
+<tr>
+<th></th>
+<th><strong>birth_year</strong></th>
+<th><strong>survey_year</strong></th>
+<th><strong>age</strong></th>
+<th><strong>educ</strong></th>
+<th><strong>happy</strong></th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <th class="alert alert-block alert-success"><span style="color: black;"><strong>21740</strong></span></th>
@@ -10958,6 +10998,16 @@ Name: age, Length: 21758, dtype: bool</pre>
 </table>
     The last two rows should be:
     <table class="black-border-table" style="text-align: right;">
+<thead>
+<tr>
+<th></th>
+<th><strong>birth_year</strong></th>
+<th><strong>survey_year</strong></th>
+<th><strong>age</strong></th>
+<th><strong>educ</strong></th>
+<th><strong>happy</strong></th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <th class="alert alert-block alert-success"><span style="color: black;"><strong>21704</strong></span></th>
