@@ -1,3 +1,13 @@
 .csl-entry {
   margin-bottom: 0.75em;
 }
+
+p code, li code {
+  background-color: transparent;
+}
+
+.callout-note code {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+}

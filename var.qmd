@@ -6,10 +6,6 @@ title: Variables
 
 This table provides brief descriptions of each variable used in the project. It is intended as a quick reference for understanding what each variable represents.
 
-::: {.callout-note title="Variable Availability by Year"}
-Unless otherwise noted, variables are available for survey years 1987, 1993, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2021, 2022, and 2024.
-:::
-
 | Variable Name | Description |
 |------------------------------------|------------------------------------|
 | `id` | Respondent ID number |
@@ -62,6 +58,10 @@ Unless otherwise noted, variables are available for survey years 1987, 1993, 200
 ## Categories & Years
 
 This table groups variables by topic area and indicates the survey years in which each variable is available. It can be used to identify which variables support comparisons across time.
+
+::: {.callout-note title="Variable Availability by Year"}
+The survey years included in this dataset are 1987, 1993, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2021, 2022, and 2024. “All” indicates the variable is available for every year, while specific years are listed when availability is limited.
+:::
 
 | Category | Variable | Years Available |
 |------------------------|------------------------|------------------------|
@@ -184,7 +184,7 @@ This section describes codes used to represent missing, inapplicable, or non-sub
 
 Some missing values occur because a question was never asked (for example, it was not included in a particular survey year), while others reflect meaningful responses such as “don’t know” or “not applicable.”
 
-When analyzing the data, these codes should be handled intentionally. In most cases, they should be excluded from summaries and visualizations, rather than treated as valid responses.
+Missing and non-substantive codes are not errors. They indicate when a question did not apply, was skipped, or could not be answered. In most cases, they should be excluded from summaries and visualizations, rather than treated as valid responses.
 
 | Code | Meaning | Notes & When It Appears |
 |------------------------|------------------------|------------------------|
@@ -194,7 +194,3 @@ When analyzing the data, these codes should be handled intentionally. In most ca
 | `.d:  Do not Know/Cannot Choose` | Don’t know / cannot choose | Respondent could not or would not provide a substantive answer |
 | `.s:  Skipped on Web` | Skipped on web | Respondent skipped the question in web-based surveys |
 | `.y:  Not available in this year` | Not asked in this year | Variable not included in that survey year |
-
-::: {.callout-note title="Working with Missing Values"}
-Missing and non-substantive codes are not errors. They indicate when a question did not apply, was skipped, or could not be answered. These values should usually be excluded from summaries and visualizations.
-:::

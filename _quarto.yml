@@ -8,6 +8,8 @@ book:
   author:
    - name: Kate Lockwood
      affiliation: St. Paul Academy and Summit School
+   - name: Dylan Armitage
+     affiliation: Edison High School
    - name: Mahmoud Harding
      affiliation: Data Science 4 Everyone
   chapters:

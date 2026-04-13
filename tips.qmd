@@ -10,7 +10,7 @@ A Jupyter Notebook is a web-based interactive computing environment that support
 
 Jupyter notebooks allow users to create and share documents that combine code, equations, visualizations, and formatted text [@stokes2025projectbased]. They are commonly used for data science because users can write and run code step by step, document their thinking, and view results directly alongside the code that produced them.
 
-::: {.callout-note title="Avoid Multiple Tabs"}
+::: {.callout-important title="Avoid Multiple Tabs"}
 Avoid opening multiple notebooks in separate tabs, as this can lead to memory overload, forcing you to restart your session.
 :::
 

@@ -100,7 +100,7 @@ print(letters[-3:])
 ```
 
 ::: {.callout-note title="Slice reminder"}
--   `[:3]` and `[:3]` both mean items at index positions 0–2
+-   `[0:3]` and `[:3]` both mean items at index positions 0–2
 -   `[-3:]` means the last three items
 :::
 

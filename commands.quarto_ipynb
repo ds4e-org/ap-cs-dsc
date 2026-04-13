@@ -8,7 +8,7 @@
         "title: Useful Python Commands\n",
         "---"
       ],
-      "id": "b804d2a9"
+      "id": "0c8c8b34"
     },
     {
       "cell_type": "code",
@@ -54,7 +54,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "535eee3e"
+      "id": "d4e020b5"
     },
     {
       "cell_type": "code",
@@ -88,7 +88,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "91daab87"
+      "id": "e2dc0afe"
     },
     {
       "cell_type": "code",
@@ -126,7 +126,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "ae188cb8"
+      "id": "6030d465"
     },
     {
       "cell_type": "code",
@@ -147,7 +147,7 @@
       "source": [
         "**Example**\n"
       ],
-      "id": "3182227c"
+      "id": "44de7607"
     },
     {
       "cell_type": "code",
@@ -184,7 +184,7 @@
         "\n",
         "**Example (string keys)**\n"
       ],
-      "id": "f63b498e"
+      "id": "a6bfef55"
     },
     {
       "cell_type": "code",
@@ -207,7 +207,7 @@
       "source": [
         "**Example (numeric keys)**\n"
       ],
-      "id": "83e2a45e"
+      "id": "24ed11e6"
     },
     {
       "cell_type": "code",
@@ -247,7 +247,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "af7ab96f"
+      "id": "17a19af5"
     },
     {
       "cell_type": "code",
@@ -278,7 +278,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "6c73ec55"
+      "id": "6e2966e4"
     },
     {
       "cell_type": "code",
@@ -309,7 +309,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "55692641"
+      "id": "594c5611"
     },
     {
       "cell_type": "code",
@@ -357,7 +357,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "01a406a3"
+      "id": "e2640e29"
     },
     {
       "cell_type": "code",
@@ -398,7 +398,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "b1c4d1a5"
+      "id": "f722508d"
     },
     {
       "cell_type": "code",
@@ -443,7 +443,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "01a8c72e"
+      "id": "a6230d57"
     },
     {
       "cell_type": "code",
@@ -480,7 +480,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "d59631c9"
+      "id": "30c218fe"
     },
     {
       "cell_type": "code",
@@ -521,7 +521,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "5a61f366"
+      "id": "5d9d7473"
     },
     {
       "cell_type": "code",
@@ -554,7 +554,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "af0a7b03"
+      "id": "ca43b201"
     },
     {
       "cell_type": "code",
@@ -590,7 +590,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "c8ffcd77"
+      "id": "6b4eb50d"
     },
     {
       "cell_type": "code",
@@ -620,7 +620,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "f671a304"
+      "id": "7fab0533"
     },
     {
       "cell_type": "code",
@@ -650,7 +650,7 @@
         "\n",
         "**Example (Ascending Order)**\n"
       ],
-      "id": "b32b93cd"
+      "id": "7c9f375d"
     },
     {
       "cell_type": "code",
@@ -670,7 +670,7 @@
       "source": [
         "**Example (Descending Order)**\n"
       ],
-      "id": "f3d9c85f"
+      "id": "be5bbf3a"
     },
     {
       "cell_type": "code",
@@ -706,7 +706,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "6ce57621"
+      "id": "dc228841"
     },
     {
       "cell_type": "code",
@@ -740,7 +740,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "4cf93e3f"
+      "id": "23c01915"
     },
     {
       "cell_type": "code",
@@ -770,7 +770,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "2de11d22"
+      "id": "3305cf46"
     },
     {
       "cell_type": "code",
@@ -809,7 +809,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "ffde8fad"
+      "id": "12190bc6"
     },
     {
       "cell_type": "code",
@@ -845,7 +845,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "dd8b9e06"
+      "id": "fdbbc415"
     },
     {
       "cell_type": "code",
@@ -865,7 +865,7 @@
       "source": [
         "**Example**\n"
       ],
-      "id": "df9a2e39"
+      "id": "7d8cb944"
     },
     {
       "cell_type": "code",
@@ -901,7 +901,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "868ae8dd"
+      "id": "cd101b83"
     },
     {
       "cell_type": "code",
@@ -937,7 +937,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "16b5b4f3"
+      "id": "3d186615"
     },
     {
       "cell_type": "code",
@@ -971,7 +971,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "a3a0cbf1"
+      "id": "83305a38"
     },
     {
       "cell_type": "code",
@@ -1001,7 +1001,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "0c1096f3"
+      "id": "11c44cee"
     },
     {
       "cell_type": "code",
@@ -1040,7 +1040,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "da8b7957"
+      "id": "6428666e"
     },
     {
       "cell_type": "code",
@@ -1080,7 +1080,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "c483de58"
+      "id": "4163f20f"
     },
     {
       "cell_type": "code",
@@ -1114,7 +1114,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "0b9e00d7"
+      "id": "cc0bce65"
     },
     {
       "cell_type": "code",
@@ -1142,7 +1142,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "595654f5"
+      "id": "a3dc89ea"
     },
     {
       "cell_type": "code",
@@ -1189,7 +1189,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "f8c7a159"
+      "id": "d3e36336"
     },
     {
       "cell_type": "code",
@@ -1213,7 +1213,7 @@
       "source": [
         "**Example**\n"
       ],
-      "id": "464374bd"
+      "id": "5205e365"
     },
     {
       "cell_type": "code",
@@ -1251,7 +1251,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "99684bb1"
+      "id": "80a99dcf"
     },
     {
       "cell_type": "code",
@@ -1301,7 +1301,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "677e544a"
+      "id": "9b26233a"
     },
     {
       "cell_type": "code",
@@ -1342,7 +1342,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "cc919ce0"
+      "id": "b9e25d49"
     },
     {
       "cell_type": "code",
@@ -1394,7 +1394,7 @@
         "\n",
         "**Example**\n"
       ],
-      "id": "5647af6a"
+      "id": "20c63e42"
     },
     {
       "cell_type": "code",
@@ -1415,7 +1415,7 @@
       "source": [
         "**Example**\n"
       ],
-      "id": "709ee0de"
+      "id": "580625c7"
     },
     {
       "cell_type": "code",

@@ -1,0 +1,17 @@
+---
+title: Terms of Use
+---
+
+## After the AP Data Science Capstone
+
+The After the AP Data Science Capstone (CS) is an opt-in academic enrichment initiative and is not a formal research study.
+
+Teachers who participate agree to share their name, email, and survey responses with Data Science 4 Everyone (DS4E) and our partners (Canvas, CourseKata, the LASER Institute at the University of Minnesota). DS4E will not share teacher names, emails, or survey information with any other parties without express written consent.
+
+Teachers will be automatically enrolled in a data science capstone email list, where DS4E will send updates, important announcements, and surveys related to the capstone. Teachers can opt out at any time by emailing an opt-out request to [info\@datascience4everyone.org](mailto:info@datascience4everyone.org) To participate in the capstone, students will have to make an account on the Canvas web platform (the learning management system that hosts the challenge), which entails sharing their email address and names with Canvas, DS4E, and CourseKata. Making an account allows students to save their work and come back to it in the Canvas platform, which is necessary for completing the capstone. All survey data from students (in which they provide feedback on their learning experience) will be collected anonymously and shared with partners only in a deidentified fashion.
+
+Canvas’s privacy policy and use of this information can be found [here](https://www.instructure.com/policies/privacy). If these terms or Canvas’s policies violate teachers’ school, district, or state policies about student data protections, we ask that teachers not participate in the After The AP Data Science Capstone and refrain from signing their students up for the challenge.
+
+**VERSION**
+
+These Terms of Use were last updated 04/12/2026.
