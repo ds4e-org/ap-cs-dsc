@@ -182,9 +182,7 @@ This table maps each variable to the original survey question and lists the year
 
 This section describes codes used to represent missing, inapplicable, or non-substantive responses in the GSS. Missing and non-substantive codes appear in survey data when a question does not apply to a respondent, was skipped, or could not be answered. These values are not errors.
 
-Some missing values occur because a question was never asked (for example, it was not included in a particular survey year), while others reflect meaningful responses such as “don’t know” or “not applicable.”
-
-Missing and non-substantive codes are not errors. They indicate when a question did not apply, was skipped, or could not be answered. In most cases, they should be excluded from summaries and visualizations, rather than treated as valid responses.
+Some missing values occur because a question was never asked (for example, it was not included in a particular survey year), while others reflect meaningful responses such as “don’t know” or “not applicable.” In most cases, they should be excluded from summaries and visualizations, rather than treated as valid responses.
 
 | Code | Meaning | Notes & When It Appears |
 |------------------------|------------------------|------------------------|
