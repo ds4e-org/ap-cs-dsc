@@ -184,8 +184,6 @@ This section describes codes used to represent missing, inapplicable, or non-sub
 
 Some missing values occur because a question was never asked (for example, it was not included in a particular survey year), while others reflect meaningful responses such as “don’t know” or “not applicable.”
 
-Missing and non-substantive codes are not errors. They indicate when a question did not apply, was skipped, or could not be answered. In most cases, they should be excluded from summaries and visualizations, rather than treated as valid responses.
-
 | Code | Meaning | Notes & When It Appears |
 |------------------------|------------------------|------------------------|
 | `NaN` | Missing value (numeric) | Pandas missing value; appears in numeric columns |
