@@ -1,8 +1,8 @@
 ---
-title: Data Science Capstone Resources
+title: Canvas Course and Resources
 ---
 
-## After the AP Data Science Capstone (CS) Resources
+## Canvas Course and Resources
 
 To simplify things, teachers will access the Canvas course in a similar way to their students. In addition, the teacher interface on Canvas will be identical to the student interface.
 
