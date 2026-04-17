@@ -22,6 +22,7 @@ book:
     - resources.qmd
     - references.qmd
     - partners.qmd
+    - terms.qmd
 
 bibliography: references.bib
 
