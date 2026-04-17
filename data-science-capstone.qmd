@@ -38,7 +38,7 @@ Since this is your first time using the capstone:
 
 - Use the following resources to help you run the capstone:
 
-#### Notebook Walkthrough Videosc(Feel free to share with students)
+#### Notebook Walkthrough Videos (Feel free to share with students)
 
 - <a href="https://youtu.be/_g7A2F4G4CQ" target="_blank" rel="noopener noreferrer">Notebook 1 Video Walkthrough</a>
 - <a href="https://youtu.be/_g7A2F4G4CQ" target="_blank" rel="noopener noreferrer">Notebook 2 Video Walkthrough</a>
@@ -59,7 +59,6 @@ Since this is your first time using the capstone:
 **Note:** Teachers only — no students please.
 
 Coding questions? Trouble accessing Canvas? Did you find a typo? To get in contact or get support, join our free [Flarum forum](https://ds4edscteachers.freeflarum.com/). It’s an online platform where you can reach out, ask questions, report typos, and search through already resolved issues. Please do not invite your students.
- 
 
 **Note:** Please do not invite your students.
 
