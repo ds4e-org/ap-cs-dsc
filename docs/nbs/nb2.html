@@ -10053,8 +10053,8 @@ Name: age, Length: 21758, dtype: bool</pre>
 <th>birth_year</th>
 <th>survey_year</th>
 <th>age</th>
-<th>degree</th>
-<th>wrkstat</th>
+<th>educ</th>
+<th>happy</th>
 </tr>
 </thead>
 <tbody>
@@ -10063,40 +10063,40 @@ Name: age, Length: 21758, dtype: bool</pre>
 <td>1966</td>
 <td>1987</td>
 <td>21</td>
-<td>High school</td>
-<td>Working full time</td>
+<td>12th grade</td>
+<td>Pretty happy</td>
 </tr>
 <tr>
 <th>12</th>
 <td>1967</td>
 <td>1987</td>
 <td>20</td>
-<td>High school</td>
-<td>Unemployed, laid off, looking for work</td>
+<td>12th grade</td>
+<td>Very happy</td>
 </tr>
 <tr>
 <th>15</th>
 <td>1967</td>
 <td>1987</td>
 <td>20</td>
-<td>High school</td>
-<td>In school</td>
+<td>1 year of college</td>
+<td>Pretty happy</td>
 </tr>
 <tr>
 <th>52</th>
 <td>1966</td>
 <td>1987</td>
 <td>21</td>
-<td>Associate/junior college</td>
-<td>Working full time</td>
+<td>2 years of college</td>
+<td>Pretty happy</td>
 </tr>
 <tr>
 <th>55</th>
 <td>1967</td>
 <td>1987</td>
 <td>20</td>
-<td>High school</td>
-<td>Working part time</td>
+<td>12th grade</td>
+<td>Very happy</td>
 </tr>
 <tr>
 <th>...</th>
@@ -10111,40 +10111,40 @@ Name: age, Length: 21758, dtype: bool</pre>
 <td>2003</td>
 <td>2024</td>
 <td>21</td>
-<td>High school</td>
-<td>Working full time</td>
+<td>12th grade</td>
+<td>Very happy</td>
 </tr>
 <tr>
 <th>21670</th>
 <td>2004</td>
 <td>2024</td>
 <td>20</td>
-<td>High school</td>
-<td>Working part time</td>
+<td>3 years of college</td>
+<td>Pretty happy</td>
 </tr>
 <tr>
 <th>21685</th>
 <td>2001</td>
 <td>2024</td>
 <td>23</td>
-<td>Bachelor's</td>
-<td>Unemployed, laid off, looking for work</td>
+<td>4 years of college</td>
+<td>Not too happy</td>
 </tr>
 <tr>
 <th>21716</th>
 <td>2001</td>
 <td>2024</td>
 <td>23</td>
-<td>High school</td>
-<td>Unemployed, laid off, looking for work</td>
+<td>12th grade</td>
+<td>Pretty happy</td>
 </tr>
 <tr>
 <th>21740</th>
 <td>2001</td>
 <td>2024</td>
 <td>22</td>
-<td>High school</td>
-<td>In school</td>
+<td>12th grade</td>
+<td>Not too happy</td>
 </tr>
 </tbody>
 </table>
@@ -11577,7 +11577,7 @@ Name: age, dtype: float64</pre>
 <div class="alert alert-block alert-success">
 <strong>Check yourself:</strong> The output should be:
     <pre style="background-color: transparent; margin-top:10px;">
-    [&lt;NA&gt;, '5', '2', '1', '0', '6', '7', '8', '3', '4', '30', '10',
+    array([&lt;NA&gt;, '5', '2', '1', '0', '6', '7', '8', '3', '4', '30', '10',
        '50', '21', '12', '20', '16', '15', '60', '14', '40', '25', '46',
        '17', '9', '13', '98', '28', '42', '35', '45', '36', '32', '112',
        '22', '24', '11', '64', '23', '29', '18', '100', '48', '37', '27',
@@ -11585,7 +11585,7 @@ Name: age, dtype: float64</pre>
        '120', '38', '19', '63', '33', '84', '122', '90', '91', '132',
        '49', '85', '86', '56', '47', '105', '140', '95', '83', '57', '68',
        '125', '110', '150', '160', '96', '54', '76', '51', '119', '41',
-       '126', '43']
+       '126', '43'], dtype=object)
     </pre>
 </div>
 </div>
@@ -11598,7 +11598,8 @@ Name: age, dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The final step is to convert the values in this column to a numeric data type.</p>
+<p>You may have noticed that the previous output ended with <code>dtype=object</code>. This means the values in this column are not currently being treated as numeric.</p>
+<p>As a final step, we need convert the values in this column to a numeric data type so so we can perform numerical analysis on them.</p>
 </div>
 </div>
 </div>

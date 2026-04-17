@@ -22,7 +22,7 @@ book:
     - resources.qmd
     - references.qmd
     - partners.qmd
-    - data-science-capstone.qmd
+    - capstone.qmd
     - terms.qmd
 
 bibliography: references.bib

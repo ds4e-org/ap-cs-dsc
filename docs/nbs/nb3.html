@@ -7877,7 +7877,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="2.0---Loading-and-Inspecting-the-Data">2.0 - Loading and Inspecting the Data<a class="anchor-link" href="#2.0---Loading-and-Inspecting-the-Data">¶</a></h3><p>To begin, let's download our data. We'll download the <code>updated_gss.csv</code> from the <strong>Insert-ds4e site here</strong> website and store it into a <code>pandas</code> <code>DataFrame</code> object called <code>gss</code>.</p>
+<h3 id="2.0---Loading-and-Inspecting-the-Data">2.0 - Loading and Inspecting the Data<a class="anchor-link" href="#2.0---Loading-and-Inspecting-the-Data">¶</a></h3><p>To begin, let's download our data. We'll download the <code>updated_gss.csv</code> from the Data Science 4 Everyone GitHub repository and store it into a <code>pandas</code> <code>DataFrame</code> object called <code>gss</code>.</p>
 </div>
 </div>
 </div>
@@ -7891,7 +7891,7 @@ a.anchor-link {
 <div style="background-color:#e2e8f0; border-left:6px solid #334155; padding:12px;">
 <h3>The Dataset (<code style="background-color:transparent">updated_gss.csv</code>)</h3>
 <p><strong>General description:</strong> The <a href="https://gss.norc.org/">General Social Survey (GSS)</a> is a nationally representative survey of adults in the United States that was started in 1972. Conducted by the non-partisan <a href="https://www.norc.org/"> National Opinion Research Center (NORC)</a>, the GSS collects data on a wide variety of topics in contemporary American society, including civil liberties, crime, intergroup tolerance, and social mobility. Its core purpose is to monitor and explain trends in opinions, attitudes, and behaviors.</p>
-<p>The dataset used in this notebook is a subset of the full GSS, containing selected variables and survey years chosen to support instructional exploration and analysis. t also includes a cleaned version of the <code style="background-color:transparent">wwwhr</code> column, with text-based response codes removed, replaced by missing values (<code style="background-color:transparent">(NA)</code>), and remaining values converted to numeric.
+<p>The dataset used in this notebook is a subset of the full GSS, containing selected variables and survey years chosen to support instructional exploration and analysis. It also includes a cleaned version of the <code style="background-color:transparent">wwwhr</code> column, with text-based response codes removed, replaced by missing values (<code style="background-color:transparent">(NA)</code>), and remaining values converted to numeric.
   <p><strong>Description of all variables:</strong> See <a href="https://ds4e-org.github.io/ap-cs-dsc-student/var.html">here.</a></p>
 <p><strong>Detailed data file description:</strong> See <a href="https://docs.google.com/spreadsheets/d/1AC6ZEz_00ZjoBBWrBpAgnybOqzFOsKFX/edit?gid=61928758#gid=61928758">here.</a></p>
 </p></div>
@@ -7926,7 +7926,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>1.1 -</strong> Use the <code style="background-color:transparent">.head()</code> method to print out the first several rows of the dataset.
+<strong>2.1 -</strong> Use the <code style="background-color:transparent">.head()</code> method to print out the first several rows of the dataset.
 </div>
 </div>
 </div>
@@ -8131,7 +8131,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>1.2 -</strong> Use the <code style="background-color:transparent">.shape</code> method to find the number of respondents (rows) and number of variables (columns).
+<strong>2.2 -</strong> Use the <code style="background-color:transparent">.shape</code> method to find the number of respondents (rows) and number of variables (columns).
 </div>
 </div>
 </div>
@@ -8182,7 +8182,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>1.3 -</strong> Use the <code style="background-color:transparent">.info()</code> method to print out information about the dataframe's structure.
+<strong>2.3 -</strong> Use the <code style="background-color:transparent">.info()</code> method to print out information about the dataframe's structure.
 </div>
 </div>
 </div>
@@ -8273,7 +8273,7 @@ memory usage: 7.5+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="2.0---Visualizing-Numerical-(Quantitative)-Data">2.0 - Visualizing Numerical (Quantitative) Data<a class="anchor-link" href="#2.0---Visualizing-Numerical-(Quantitative)-Data">¶</a></h3><p>Visualizations help us develop an overall understanding of our data. In this section, we use Matplotlib to create plots and charts that allow us to examine distributions, compare groups, and identify patterns that may not be obvious from numerical summaries alone.</p>
+<h3 id="3.0---Visualizing-Numerical-(Quantitative)-Data">3.0 - Visualizing Numerical (Quantitative) Data<a class="anchor-link" href="#3.0---Visualizing-Numerical-(Quantitative)-Data">¶</a></h3><p>Visualizations help us develop an overall understanding of our data. In this section, we use Matplotlib to create plots and charts that allow us to examine distributions, compare groups, and identify patterns that may not be obvious from numerical summaries alone.</p>
 <p>When working with quantitative data, we describe a distribution in terms of its shape (skew and number of peaks), center (a typical value), and variation (spread).</p>
 <ul>
 <li>Skew describes whether the data is balanced or has a longer tail on one side (left or right).</li>
@@ -8407,7 +8407,7 @@ memory usage: 7.5+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.1 -</strong> Create a histogram for the <code style="background-color:transparent">wwwhr</code> variable (hours per week spent on the internet). Label both axes and include a descriptive title.
+<strong>3.1 -</strong> Create a histogram for the <code style="background-color:transparent">wwwhr</code> variable (hours per week spent on the internet). Label both axes and include a descriptive title.
 </div>
 </div>
 </div>
@@ -8451,7 +8451,7 @@ memory usage: 7.5+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.2 –</strong> Use the sentence stems below to describe the distribution and note any features of interest.
+<strong>3.2 –</strong> Use the sentence stems below to describe the distribution and note any features of interest.
     <ul style="margin-top: 10px;">
 <li>Most respondents report between … and … of internet use per week.</li>
 <li>A small number of respondents report more than … of internet use per week.</li>
@@ -8604,7 +8604,7 @@ memory usage: 7.5+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.3 -</strong> Create a horizontal boxplot for the <code style="background-color:transparent">age</code> variable. Label both axes and include a descriptive title.
+<strong>3.3 -</strong> Create a horizontal boxplot for the <code style="background-color:transparent">age</code> variable. Label both axes and include a descriptive title.
 </div>
 </div>
 </div>
@@ -8720,7 +8720,7 @@ memory usage: 7.5+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.4 -</strong> Use the sentence stems below to compare reported internet usage across all the age groups.
+<strong>3.4 -</strong> Use the sentence stems below to compare reported internet usage across all the age groups.
     <ul style="margin-top: 10px;">
 <li>The median internet usage for the <strong>Mid Career</strong> group appears to be around … hours per week, compared to about … hours for the younger age groups.</li>
 <li>The middle 50% of internet usage for the <strong>Mid Career</strong> group falls roughly between … and … hours, while the younger groups extend to higher values.</li>
@@ -8836,7 +8836,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.5 -</strong> Create a list named <code style="background-color:transparent">hap_unhap</code> to store the responses <code style="background-color:transparent">Fairly happy</code>, <code style="background-color:transparent">Very happy</code>, <code style="background-color:transparent">Not very happy</code>, and <code style="background-color:transparent">Not at all happy</code>.
+<strong>3.5 -</strong> Create a list named <code style="background-color:transparent">hap_unhap</code> to store the responses <code style="background-color:transparent">Fairly happy</code>, <code style="background-color:transparent">Very happy</code>, <code style="background-color:transparent">Not very happy</code>, and <code style="background-color:transparent">Not at all happy</code>.
 </div>
 </div>
 </div>
@@ -8892,7 +8892,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.6 -</strong> Use <code style="background-color:transparent">.isin()</code> with the <code style="background-color:transparent">hap_unhap</code> list to filter the <code style="background-color:transparent">gss</code> dataframe to include only matching happiness responses. Save the result as <code style="background-color:transparent">hap_unhap_df</code>.   
+<strong>3.6 -</strong> Use <code style="background-color:transparent">.isin()</code> with the <code style="background-color:transparent">hap_unhap</code> list to filter the <code style="background-color:transparent">gss</code> dataframe to include only matching happiness responses. Save the result as <code style="background-color:transparent">hap_unhap_df</code>.   
 </div>
 </div>
 </div>
@@ -8962,7 +8962,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.7 -</strong>  Use the <code style="background-color:transparent">hap_unhap_df</code> to create a boxplot that displays the hours spent on the internet (<code style="background-color:transparent">wwwhr</code>) across the happiness levels (<code style="background-color:transparent">Fairly happy</code>, <code style="background-color:transparent">Very happy</code>, <code style="background-color:transparent">Not very happy</code>, and <code style="background-color:transparent">Not at all happy</code>). Be sure to label the axes, add $x-$tick marks, remove the default subtitle, and include a descriptive title.
+<strong>3.7 -</strong>  Use the <code style="background-color:transparent">hap_unhap_df</code> to create a boxplot that displays the hours spent on the internet (<code style="background-color:transparent">wwwhr</code>) across the happiness levels (<code style="background-color:transparent">Fairly happy</code>, <code style="background-color:transparent">Very happy</code>, <code style="background-color:transparent">Not very happy</code>, and <code style="background-color:transparent">Not at all happy</code>). Be sure to label the axes, add $x-$tick marks, remove the default subtitle, and include a descriptive title.
 </div>
 </div>
 </div>
@@ -9007,7 +9007,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>2.8 -</strong> Use the sentence stems below to describe patterns in the boxplot.
+<strong>3.8 -</strong> Use the sentence stems below to describe patterns in the boxplot.
     <ul style="margin-top: 10px;">
 <li>The median number of hours spent on the internet appears to be … for respondents who are <strong>Very happy</strong>, compared to … for respondents who are <strong>Not very happy</strong> or <strong>Not at all happy</strong>.</li>
 <li>The middle 50% of internet usage for respondents who are <strong>Not at all happy</strong> falls roughly between … and … hours, which is … than for the other happiness groups.</li>
@@ -9053,7 +9053,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="3.0---Visualizing-Categorical-(Qualitative)-Data">3.0 - Visualizing Categorical (Qualitative) Data<a class="anchor-link" href="#3.0---Visualizing-Categorical-(Qualitative)-Data">¶</a></h3><p>When working with categorical data, we focus on how observations are distributed across categories. Unlike numerical data, which consists of values that can be measured and used in calculations, categorical data consists of labels or groups (for example, “Pretty Happy” or “Not too happy”). We summarize categorical data using counts or proportions to understand how responses are distributed across categories.</p>
+<h3 id="4.0---Visualizing-Categorical-(Qualitative)-Data">4.0 - Visualizing Categorical (Qualitative) Data<a class="anchor-link" href="#4.0---Visualizing-Categorical-(Qualitative)-Data">¶</a></h3><p>When working with categorical data, we focus on how observations are distributed across categories. Unlike numerical data, which consists of values that can be measured and used in calculations, categorical data consists of labels or groups (for example, “Pretty Happy” or “Not too happy”). We summarize categorical data using counts or proportions to understand how responses are distributed across categories.</p>
 <h4 id="Bar-Charts">Bar Charts<a class="anchor-link" href="#Bar-Charts">¶</a></h4><p>Bar charts are used to display the counts of a categorical variable. To create a bar chart, we first calculate how often each category appears in the data. Here, we use the <code>.value_counts()</code> method to create a frequency table for the <code>happy</code> column:</p>
 </div>
 </div>
@@ -9163,7 +9163,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.1 -</strong> Create a frequency table for the <code style="background-color:transparent">age_group</code> variable.
+<strong>4.1 -</strong> Create a frequency table for the <code style="background-color:transparent">age_group</code> variable.
 </div>
 </div>
 </div>
@@ -9207,7 +9207,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.2 -</strong> Create a bar chart for the <code style="background-color:transparent">age_group</code> variable. Label both axes and include a descriptive title.
+<strong>4.2 -</strong> Create a bar chart for the <code style="background-color:transparent">age_group</code> variable. Label both axes and include a descriptive title.
 </div>
 </div>
 </div>
@@ -9251,7 +9251,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.3 —</strong> Use the sentence stems below to describe the bar chart.
+<strong>4.3 —</strong> Use the sentence stems below to describe the bar chart.
     <ul style="margin-top: 10px;">
 <li>The age group with the highest number of respondents is …</li>
 <li>The age group with the lowest number of respondents is …</li>
@@ -9462,7 +9462,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.4 —</strong> Focus on the <code style="background-color:transparent">High school</code> and <code style="background-color:transparent">Less than high school</code> rows, and the <code style="background-color:transparent">Not too happy</code>, <code style="background-color:transparent">Pretty happy</code>, and <code style="background-color:transparent">Very happy</code> columns. Use the sentence stems below to describe the results and patterns two-way frequency table.
+<strong>4.4 —</strong> Focus on the <code style="background-color:transparent">High school</code> and <code style="background-color:transparent">Less than high school</code> rows, and the <code style="background-color:transparent">Not too happy</code>, <code style="background-color:transparent">Pretty happy</code>, and <code style="background-color:transparent">Very happy</code> columns. Use the sentence stems below to describe the results and patterns two-way frequency table.
     <ul style="margin-top: 10px;">
 <li>For respondents with a <strong>high school</strong> education, the most common happiness category is …</li>
 <li>For respondents with <strong>less than a high school</strong> education, the most common happiness category is …</li>
@@ -9619,7 +9619,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.5 — </strong>After running the code above, talk through the questions below with a classmate or the instructor. You <strong>do not</strong> need to write anything or change the code.
+<strong>4.5 — </strong>After running the code above, talk through the questions below with a classmate or the instructor. You <strong>do not</strong> need to write anything or change the code.
     <ul style="margin-top: 10px;">
 <li>What do the lists <code style="background-color:transparent">deg_cat</code> and <code style="background-color:transparent">hap_cat</code> represent?</li>
 <li>What does <code style="background-color:transparent">.isin()</code> do in this code?</li>
@@ -9878,7 +9878,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.6 —</strong> Focus only on the <strong>High school</strong> and <strong>Less than high school</strong> rows. Use the sentence stems below to compare the two-way frequency table to the proportions table.
+<strong>4.6 —</strong> Focus only on the <strong>High school</strong> and <strong>Less than high school</strong> rows. Use the sentence stems below to compare the two-way frequency table to the proportions table.
     <ul style="margin-top: 10px;">
 <li>The frequency table emphasizes …, while the proportions table shows ….</li>
 <li>Proportions provide a more accurate way to compare … because they show the … of each group in a category, rather than counts that are influenced ….</li>
@@ -10028,7 +10028,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.7 —</strong> Create a list named <code style="background-color:transparent">dip_cat</code> that stores the three types of high school credentials reported by respondents.
+<strong>4.7 —</strong> Create a list named <code style="background-color:transparent">dip_cat</code> that stores the three types of high school credentials reported by respondents.
 </div>
 </div>
 </div>
@@ -10111,7 +10111,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.8 —</strong> Apply <code style="background-color:transparent">dip_hap_mask</code> to the <code style="background-color:transparent">gss</code> dataframe. Save the filtered data as <code style="background-color:transparent">dip_hap_df</code>.
+<strong>4.8 —</strong> Apply <code style="background-color:transparent">dip_hap_mask</code> to the <code style="background-color:transparent">gss</code> dataframe. Save the filtered data as <code style="background-color:transparent">dip_hap_df</code>.
 </div>
 </div>
 </div>
@@ -10139,7 +10139,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.9 —</strong> Use the <code style="background-color:transparent">dip_hap_df</code> to create a two-way proportion table comparing <code style="background-color:transparent">dipged</code> and <code style="background-color:transparent">happy</code>.
+<strong>4.9 —</strong> Use the <code style="background-color:transparent">dip_hap_df</code> to create a two-way proportion table comparing <code style="background-color:transparent">dipged</code> and <code style="background-color:transparent">happy</code>.
 </div>
 </div>
 </div>
@@ -10278,7 +10278,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.10 —</strong> Create a side-by-side bar chart using the two-way proportions table created from the <code style="background-color:transparent">dip_hap_df</code> dataframe. Be sure to label the axes and include descriptive titles for both the chart and the legend.
+<strong>4.10 —</strong> Create a side-by-side bar chart using the two-way proportions table created from the <code style="background-color:transparent">dip_hap_df</code> dataframe. Be sure to label the axes and include descriptive titles for both the chart and the legend.
 </div>
 </div>
 </div>
@@ -10323,7 +10323,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<strong>3.11 -</strong> Describe how the proportions for the happiness levels vary across the diploma categories.    
+<strong>4.11 -</strong> Describe how the proportions for the happiness levels vary across the diploma categories.    
 </div>
 </div>
 </div>
@@ -10365,7 +10365,7 @@ The age group with the lowest number of respondents is the <code style="backgrou
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4.0---Notebook-Summary">4.0 - Notebook Summary<a class="anchor-link" href="#4.0---Notebook-Summary">¶</a></h3><p>In this notebook, we used visualizations to explore and compare patterns in data by:</p>
+<h3 id="5.0---Notebook-Summary">5.0 - Notebook Summary<a class="anchor-link" href="#5.0---Notebook-Summary">¶</a></h3><p>In this notebook, we used visualizations to explore and compare patterns in data by:</p>
 <ul>
 <li>examining the distribution of variables, and</li>
 <li>comparing patterns across different groups.</li>

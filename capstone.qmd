@@ -1,0 +1,67 @@
+---
+title: Canvas Course and Resources
+---
+
+## Canvas Course and Resources
+
+To simplify things, teachers will access the Canvas course in a similar way to their students. In addition, the teacher interface on Canvas will be identical to the student interface.
+
+Use the following steps to join as a teacher:
+
+### Step 1: Join the Canvas Course
+
+Since this is your first time using the capstone:
+
+1.  Navigate to https://canvas.instructure.com/register and click “I’m a student.”
+
+-   **Note:** Even though you’re the teacher, you’re still going to click *“I’m a student.”*
+
+-   **Note:** If your school already uses Canvas, you should still complete this step. Often, campuses use a version of Canvas that’s specific to their school/district. However, for this project, you’ll be using the free general version of Canvas. You may need to register for a new account using a private browser window.
+
+-   **Note:** Please make sure to remember your username. When logging in, Canvas may ask for your email, but it actually wants your username.
+
+2.  Enter the teacher join code: **LM667L**
+
+3.  Enter the rest of your information.
+
+    -   Please use the same email you provided in the Google Form when you registered.
+
+4.  Click **“Start Learning”** to enter the Canvas course.
+
+5.  Begin exploring the Canvas course and code notebooks, using our walkthrough video as a guide.
+
+-   **Note:** If you close your Canvas session, you can return to the Canvas page [here](https://canvas.instructure.com/courses/14587807) at any time. If you have login issues, try entering your username in the field that asks for your “Email.” This is a common Canvas bug.
+
+### Step 2: Explore the Teacher Resources
+
+-   **Note:** Please try to complete this at least one week before starting the project with students.
+
+-   Use the following resources to help you run the capstone:
+
+#### Notebook Walkthrough Videos (Feel free to share with students)
+
+-   <a href="https://youtu.be/_g7A2F4G4CQ" target="_blank" rel="noopener noreferrer">Notebook 1 Video Walkthrough</a>
+-   <a href="https://youtu.be/_g7A2F4G4CQ" target="_blank" rel="noopener noreferrer">Notebook 2 Video Walkthrough</a>
+-   <a href="https://www.youtube.com/watch?v=9Wr9uYJiVAU" target="_blank" rel="noopener noreferrer">Notebook 3 Video Walkthrough</a>
+-   <a href="https://www.youtube.com/watch?v=roS174YrINE" target="_blank" rel="noopener noreferrer">Notebook 4 Video Walkthrough</a>
+-   <a href="https://www.youtube.com/watch?v=y8p7WF2-gvk" target="_blank" rel="noopener noreferrer">Notebook 5 Video Walkthrough</a>
+
+#### Notebook Solutions & Teacher Notes (Feel free to share with students)
+
+-   <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb1.html" target="_blank" rel="noopener noreferrer">Notebook 1 Solutions & Teacher Notes</a>
+-   <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb2.html" target="_blank" rel="noopener noreferrer">Notebook 2 Solutions & Teacher Notes</a>
+-   <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb3.html" target="_blank" rel="noopener noreferrer">Notebook 3 Solutions & Teacher Notes</a>
+-   <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb4.html" target="_blank" rel="noopener noreferrer">Notebook 4 Solutions & Teacher Notes</a>
+-   <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb5.html" target="_blank" rel="noopener noreferrer">Notebook 5 Solutions & Teacher Notes</a>
+
+### Step 3: Flarum Support Forum
+
+**Note:** Teachers only — no students please.
+
+Coding questions? Trouble accessing Canvas? Did you find a typo? To get in contact or get support, join our free [Flarum forum](https://ds4edscteachers.freeflarum.com/). It’s an online platform where you can reach out, ask questions, report typos, and search through already resolved issues. Please do not invite your students.
+
+**Note:** Please do not invite your students.
+
+### Step 4: Review the Terms of Use
+
+Please take a few minutes to read through the [Terms of Use](https://ds4e-org.github.io/ap-cs-dsc/terms.html) before getting started with the pilot.
