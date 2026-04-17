@@ -41,7 +41,7 @@ Since this is your first time using the capstone:
 #### Notebook Walkthrough Videos (Feel free to share with students)
 
 -   <a href="https://youtu.be/_g7A2F4G4CQ" target="_blank" rel="noopener noreferrer">Notebook 1 Video Walkthrough</a>
--   <a href="https://youtu.be/_g7A2F4G4CQ" target="_blank" rel="noopener noreferrer">Notebook 2 Video Walkthrough</a>
+-   <a href="https://youtu.be/M39yIFV0Ev8" target="_blank" rel="noopener noreferrer">Notebook 2 Video Walkthrough</a>
 -   <a href="https://www.youtube.com/watch?v=9Wr9uYJiVAU" target="_blank" rel="noopener noreferrer">Notebook 3 Video Walkthrough</a>
 -   <a href="https://www.youtube.com/watch?v=roS174YrINE" target="_blank" rel="noopener noreferrer">Notebook 4 Video Walkthrough</a>
 -   <a href="https://www.youtube.com/watch?v=y8p7WF2-gvk" target="_blank" rel="noopener noreferrer">Notebook 5 Video Walkthrough</a>
