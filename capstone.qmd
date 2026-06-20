@@ -48,11 +48,11 @@ Since this is your first time using the capstone:
 
 #### Notebook Solutions & Teacher Notes (Feel free to share with students)
 
-- <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb1.html" target="_blank" rel="noopener noreferrer">Notebook 1 Solutions & Teacher Notes</a>
-- <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb2.html" target="_blank" rel="noopener noreferrer">Notebook 2 Solutions & Teacher Notes</a>
-- <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb3.html" target="_blank" rel="noopener noreferrer">Notebook 3 Solutions & Teacher Notes</a>
-- <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb4.html" target="_blank" rel="noopener noreferrer">Notebook 4 Solutions & Teacher Notes</a>
-- <a href="https://ds4e-org.github.io/ap-cs-dsc/nbs/nb5.html" target="_blank" rel="noopener noreferrer">Notebook 5 Solutions & Teacher Notes</a>
+- <a href="https://ds4e-org.github.io/ap-cs-dsc/update.html" target="_blank" rel="noopener noreferrer">Notebook 1 Solutions & Teacher Notes</a>
+- <a href="https://ds4e-org.github.io/ap-cs-dsc/update.html" target="_blank" rel="noopener noreferrer">Notebook 2 Solutions & Teacher Notes</a>
+- <a href="https://ds4e-org.github.io/ap-cs-dsc/update.html" target="_blank" rel="noopener noreferrer">Notebook 3 Solutions & Teacher Notes</a>
+- <a href="https://ds4e-org.github.io/ap-cs-dsc/update.html" target="_blank" rel="noopener noreferrer">Notebook 4 Solutions & Teacher Notes</a>
+- <a href="https://ds4e-org.github.io/ap-cs-dsc/update.html" target="_blank" rel="noopener noreferrer">Notebook 5 Solutions & Teacher Notes</a>
 
 ### Step 3: Flarum Support Forum
 
