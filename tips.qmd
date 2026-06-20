@@ -18,8 +18,8 @@ Avoid opening multiple notebooks in separate tabs, as this can lead to memory ov
 
 A Jupyter Notebook has three types of cells. For this project, you will use only two:
 
--   **Code** cells for writing and running Python code
--   **Markdown** or text cells for entering written responses.
+- **Code** cells for writing and running Python code
+- **Markdown** or text cells for entering written responses.
 
 ### Running Cells in a Jupyter Notebook
 
@@ -29,8 +29,8 @@ In a Jupyter Notebook, you run cells one at a time to see code output or display
 
 You can also use keyboard shortcuts:
 
--   PCs and Chromebooks: Hold **Ctrl** and press **Enter**
--   Macs: Hold **Command (⌘)** and press **Enter**
+- PCs and Chromebooks: Hold **Ctrl** and press **Enter**
+- Macs: Hold **Command (⌘)** and press **Enter**
 
 ### Adding Cells
 
@@ -42,8 +42,8 @@ Then set the cell type as needed:
 
 ![**Code** or **Markdown** button in the Jupyter toolbar](images/code-markdown.png)
 
--   Choose **Code** for code
--   Choose **Markdown** for text
+- Choose **Code** for code
+- Choose **Markdown** for text
 
 ### Running All Cells from Top Down
 

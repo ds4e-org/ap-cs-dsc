@@ -1,4 +1,6 @@
-# Notebooks
+---
+title: Notebooks
+---
 
 ## Jupyter Notebooks
 
