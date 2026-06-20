@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-06-20">
+
+<title>Variables – After the AP Data Science Capstone (AP Computer Science)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./tips.html" rel="next">
+<link href="./dataset.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./var.html"><span class="chapter-title">Variables</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">After the AP Data Science Capstone (AP Computer Science)</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dataset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dataset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./var.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Variables</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tips.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Helpful Notebook Tips</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Useful Python Commands</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./partners.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Partners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./capstone.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Canvas Course and Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./terms.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Terms of Use</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#names-descriptions" id="toc-names-descriptions" class="nav-link active" data-scroll-target="#names-descriptions">Names &amp; Descriptions</a></li>
+  <li><a href="#categories-years" id="toc-categories-years" class="nav-link" data-scroll-target="#categories-years">Categories &amp; Years</a></li>
+  <li><a href="#survey-questions-years" id="toc-survey-questions-years" class="nav-link" data-scroll-target="#survey-questions-years">Survey Questions &amp; Years</a></li>
+  <li><a href="#missing-non-substantive-codes" id="toc-missing-non-substantive-codes" class="nav-link" data-scroll-target="#missing-non-substantive-codes">Missing &amp; Non-Substantive Codes</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Variables</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 20, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="names-descriptions" class="level2">
+<h2 class="anchored" data-anchor-id="names-descriptions">Names &amp; Descriptions</h2>
+<p>This table provides brief descriptions of each variable used in the project. It is intended as a quick reference for understanding what each variable represents.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>id</code></td>
+<td>Respondent ID number</td>
+</tr>
+<tr class="even">
+<td><code>birth_year</code></td>
+<td>Respondent’s year of birth</td>
+</tr>
+<tr class="odd">
+<td><code>survey_year</code></td>
+<td>Survey year for this respondent</td>
+</tr>
+<tr class="even">
+<td><code>age</code></td>
+<td>Respondent’s age</td>
+</tr>
+<tr class="odd">
+<td><code>age_group</code></td>
+<td>Respondent’s age group</td>
+</tr>
+<tr class="even">
+<td><code>sex</code></td>
+<td>Respondent’s sex</td>
+</tr>
+<tr class="odd">
+<td><code>reg16</code></td>
+<td>Respondent’s region of residence at age 16</td>
+</tr>
+<tr class="even">
+<td><code>region</code></td>
+<td>Respondent’s region at time of interview</td>
+</tr>
+<tr class="odd">
+<td><code>born</code></td>
+<td>Whether respondent was born in the United States</td>
+</tr>
+<tr class="even">
+<td><code>parborn</code></td>
+<td>Whether respondent’s parents were born in the United States</td>
+</tr>
+<tr class="odd">
+<td><code>granborn</code></td>
+<td>Number of respondent’s grandparents born in the United States</td>
+</tr>
+<tr class="even">
+<td><code>wrkstat</code></td>
+<td>Respondent’s labor force status</td>
+</tr>
+<tr class="odd">
+<td><code>yearsjob</code></td>
+<td>Number of years respondent has been at current job</td>
+</tr>
+<tr class="even">
+<td><code>moredays</code></td>
+<td>Number of days per month respondent works extra hours beyond usual schedule</td>
+</tr>
+<tr class="odd">
+<td><code>hrsrelax</code></td>
+<td>Number of hours respondent has to relax or pursue enjoyable activities</td>
+</tr>
+<tr class="even">
+<td><code>wwwhr</code></td>
+<td>Hours per week respondent spends browsing the internet (excluding email)</td>
+</tr>
+<tr class="odd">
+<td><code>tvhours</code></td>
+<td>Hours per day respondent spends watching television</td>
+</tr>
+<tr class="even">
+<td><code>hsbio</code></td>
+<td>Whether respondent took a high school biology course</td>
+</tr>
+<tr class="odd">
+<td><code>hschem</code></td>
+<td>Whether respondent took a high school chemistry course</td>
+</tr>
+<tr class="even">
+<td><code>hsmath</code></td>
+<td>Highest level of math completed by respondent in high school</td>
+</tr>
+<tr class="odd">
+<td><code>hsphys</code></td>
+<td>Whether respondent took a high school physics course</td>
+</tr>
+<tr class="even">
+<td><code>hsclass1</code></td>
+<td>Respondent’s favorite high school course</td>
+</tr>
+<tr class="odd">
+<td><code>dipged</code></td>
+<td>Type of high school credential earned by respondent</td>
+</tr>
+<tr class="even">
+<td><code>educ</code></td>
+<td>Highest year of school completed by respondent</td>
+</tr>
+<tr class="odd">
+<td><code>degree</code></td>
+<td>Respondent’s highest degree earned</td>
+</tr>
+<tr class="even">
+<td><code>coldeg1</code></td>
+<td>Highest college degree earned by respondent</td>
+</tr>
+<tr class="odd">
+<td><code>majorcol</code></td>
+<td>Field of respondent’s college degree</td>
+</tr>
+<tr class="even">
+<td><code>colsci</code></td>
+<td>Whether respondent has taken any college-level science course</td>
+</tr>
+<tr class="odd">
+<td><code>whencol</code></td>
+<td>Year respondent received highest college degree</td>
+</tr>
+<tr class="even">
+<td><code>voedcol</code></td>
+<td>Whether respondent completed non-college postsecondary education</td>
+</tr>
+<tr class="odd">
+<td><code>paeduc</code></td>
+<td>Highest year of school completed by respondent’s father (or oldest same-sex parent)</td>
+</tr>
+<tr class="even">
+<td><code>maeduc</code></td>
+<td>Highest year of school completed by respondent’s mother (or youngest same-sex parent)</td>
+</tr>
+<tr class="odd">
+<td><code>padeg</code></td>
+<td>Highest degree earned by respondent’s father (or oldest same-sex parent)</td>
+</tr>
+<tr class="even">
+<td><code>madeg</code></td>
+<td>Highest degree earned by respondent’s mother (or youngest same-sex parent)</td>
+</tr>
+<tr class="odd">
+<td><code>coneduc</code></td>
+<td>Respondent’s confidence in the education system</td>
+</tr>
+<tr class="even">
+<td><code>nateduc</code></td>
+<td>Opinion on improving the nation’s education system</td>
+</tr>
+<tr class="odd">
+<td><code>natenvir</code></td>
+<td>Opinion on improving and protecting the environment</td>
+</tr>
+<tr class="even">
+<td><code>happy</code></td>
+<td>Respondent’s general happiness</td>
+</tr>
+<tr class="odd">
+<td><code>happy7</code></td>
+<td>Respondent’s self-reported happiness level</td>
+</tr>
+<tr class="even">
+<td><code>hapunhap</code></td>
+<td>Whether respondent is happy or unhappy with life today</td>
+</tr>
+<tr class="odd">
+<td><code>goodlife</code></td>
+<td>Whether respondent believes their standard of living will improve</td>
+</tr>
+<tr class="even">
+<td><code>opclout</code></td>
+<td>Belief that political connections are needed to get ahead</td>
+</tr>
+<tr class="odd">
+<td><code>ophrddwrk</code></td>
+<td>Belief that working hard is needed to get ahead</td>
+</tr>
+<tr class="even">
+<td><code>opknow</code></td>
+<td>Belief that knowing the right people is needed to get ahead</td>
+</tr>
+<tr class="odd">
+<td><code>opwlth</code></td>
+<td>Belief that coming from a wealthy family is needed to get ahead</td>
+</tr>
+<tr class="even">
+<td><code>opeduc</code></td>
+<td>Belief that a good education is needed to get ahead</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="categories-years" class="level2">
+<h2 class="anchored" data-anchor-id="categories-years">Categories &amp; Years</h2>
+<p>This table groups variables by topic area and indicates the survey years in which each variable is available. It can be used to identify which variables support comparisons across time.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Variable Availability by Year">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variable Availability by Year
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The survey years included in this dataset are 1987, 1993, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2021, 2022, and 2024. “All” indicates the variable is available for every year, while specific years are listed when availability is limited.</p>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Variable</th>
+<th>Years Available</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Identifiers &amp; Administrative</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>id</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>survey_year</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>birth_year</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><strong>Age &amp; Demographics</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>age</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>age_group</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>sex</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><strong>Geographic Background</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>region</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>reg16</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><strong>Nativity &amp; Family Background</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>born</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>parborn</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>granborn</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><strong>Employment, Work, &amp; Time Use</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>wrkstat</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>yearsjob</code></td>
+<td>2002, 2006, 2010, 2014, 2018, 2022</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>moredays</code></td>
+<td>2002, 2006, 2010, 2014, 2018, 2022</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>hrsrelax</code></td>
+<td>2002, 2006, 2010, 2014, 2018, 2022</td>
+</tr>
+<tr class="odd">
+<td><strong>Technology &amp; Media Use</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>wwwhr</code></td>
+<td>2000, 2002, 2004, 2006, 2010, 2012, 2014, 2016, 2018, 2021, 2022</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>tvhours</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><strong>Education (Respondent)</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>educ</code></td>
+<td>2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2021, 2022, 2024</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>degree</code></td>
+<td>2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2021, 2022, 2024</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>coldeg1</code></td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>majorcol</code></td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>colsci</code></td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>whencol</code></td>
+<td>2012, 2014, 2016</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>voedcol</code></td>
+<td>2012, 2014, 2016</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>dipged</code></td>
+<td>2012, 2014, 2016, 2018, 2021, 2022, 2024</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>hsclass1</code></td>
+<td>1993</td>
+</tr>
+<tr class="even">
+<td><strong>Education (High School Coursework)</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>hsbio</code></td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>hschem</code></td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>hsmath</code></td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>hsphys</code></td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="odd">
+<td><strong>Education (Parental Background)</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>paeduc</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>maeduc</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>padeg</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>madeg</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><strong>Education &amp; Public Institutions (Attitudes)</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>coneduc</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>nateduc</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><strong>Environment &amp; Public Policy Attitudes</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>natenvir</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><strong>Happiness &amp; Well-Being</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>happy</code></td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>happy7</code></td>
+<td>2002, 2012, 2022</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>hapunhap</code></td>
+<td>2002, 2008, 2018</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>goodlife</code></td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><strong>Social Mobility &amp; Opportunity Beliefs</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>opclout</code></td>
+<td>1987, 2021</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>ophrddwrk</code></td>
+<td>1987, 2021</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>opknow</code></td>
+<td>1987, 2000, 2021</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><code>opwlth</code></td>
+<td>1987, 2000, 2021</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><code>opeduc</code></td>
+<td>1987, 2021</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="survey-questions-years" class="level2">
+<h2 class="anchored" data-anchor-id="survey-questions-years">Survey Questions &amp; Years</h2>
+<p>This table maps each variable to the original survey question and lists the years in which the question was asked. It helps clarify how variables were measured and when they appear in the dataset.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Survey Question</th>
+<th>Years Asked</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>id</code></td>
+<td>Administrative identifier; not a survey question.</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>birth_year</code></td>
+<td>Derived from age and survey year; not asked directly.</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>survey_year</code></td>
+<td>Administrative variable indicating year of interview.</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>age</code></td>
+<td>What is your age?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>age_group</code></td>
+<td>Derived from respondent age; not asked directly.</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>sex</code></td>
+<td>What is your sex?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>reg16</code></td>
+<td>In what region did you live when you were 16 years old?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>region</code></td>
+<td>In what region do you currently live?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>born</code></td>
+<td>Were you born in the United States?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>parborn</code></td>
+<td>Were your parents born in the United States?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>granborn</code></td>
+<td>How many of your grandparents were born outside the United States?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>wrkstat</code></td>
+<td>What is your current labor force status?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>yearsjob</code></td>
+<td>How many years have you been working at your current job?</td>
+<td>2002, 2006, 2010, 2014, 2018, 2022</td>
+</tr>
+<tr class="even">
+<td><code>moredays</code></td>
+<td>About how many days per month do you work extra hours beyond your usual schedule?</td>
+<td>2002, 2006, 2010, 2014, 2018, 2022</td>
+</tr>
+<tr class="odd">
+<td><code>hrsrelax</code></td>
+<td>About how many hours do you have to relax or pursue activities that you enjoy?</td>
+<td>2002, 2006, 2010, 2014, 2018, 2022</td>
+</tr>
+<tr class="even">
+<td><code>wwwhr</code></td>
+<td>On average, how many hours per week do you use the Internet for browsing, not counting email?</td>
+<td>2000, 2002, 2004, 2006, 2010, 2012, 2014, 2016, 2018, 2021, 2022</td>
+</tr>
+<tr class="odd">
+<td><code>tvhours</code></td>
+<td>On average, how many hours per day do you watch television?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>hsbio</code></td>
+<td>Did you take a biology course in high school?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="odd">
+<td><code>hschem</code></td>
+<td>Did you take a chemistry course in high school?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td><code>hsmath</code></td>
+<td>What is the highest level of mathematics you completed in high school?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="odd">
+<td><code>hsphys</code></td>
+<td>Did you take a physics course in high school?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td><code>hsclass1</code></td>
+<td>When you were in high school, what was your favorite course or subject?</td>
+<td>1993</td>
+</tr>
+<tr class="odd">
+<td><code>dipged</code></td>
+<td>Which best describes the credential you received from high school?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td><code>educ</code></td>
+<td>What is the highest year of school you have completed?</td>
+<td>2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2021, 2022, 2024</td>
+</tr>
+<tr class="odd">
+<td><code>degree</code></td>
+<td>What is the highest degree you have earned?</td>
+<td>2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2021, 2022, 2024</td>
+</tr>
+<tr class="even">
+<td><code>coldeg1</code></td>
+<td>What is the highest college degree you have earned?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="odd">
+<td><code>majorcol</code></td>
+<td>What was your major or field of study for your college degree?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="even">
+<td><code>colsci</code></td>
+<td>Have you ever taken a college-level science course?</td>
+<td>2006, 2008, 2010, 2012, 2014, 2016, 2018</td>
+</tr>
+<tr class="odd">
+<td><code>whencol</code></td>
+<td>In what year did you receive your college degree?</td>
+<td>2012, 2014, 2016</td>
+</tr>
+<tr class="even">
+<td><code>voedcol</code></td>
+<td>Have you completed any non-college postsecondary education?</td>
+<td>2012, 2014, 2016</td>
+</tr>
+<tr class="odd">
+<td><code>paeduc</code></td>
+<td>What is the highest year of school completed by your father (or oldest same-sex parent)?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>maeduc</code></td>
+<td>What is the highest year of school completed by your mother (or youngest same-sex parent)?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>padeg</code></td>
+<td>What is the highest degree earned by your father (or oldest same-sex parent)?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>madeg</code></td>
+<td>What is the highest degree earned by your mother (or youngest same-sex parent)?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>coneduc</code></td>
+<td>How much confidence do you have in the education system?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>nateduc</code></td>
+<td>Are we spending too much, too little, or about the right amount on improving the nation’s education system?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>natenvir</code></td>
+<td>Are we spending too much, too little, or about the right amount on improving and protecting the environment?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>happy</code></td>
+<td>Taken all together, how would you say things are these days?</td>
+<td>All</td>
+</tr>
+<tr class="odd">
+<td><code>happy7</code></td>
+<td>Taking all things together, how happy would you say you are these days?</td>
+<td>2002, 2012, 2022</td>
+</tr>
+<tr class="even">
+<td><code>hapunhap</code></td>
+<td>Would you say you are generally happy or unhappy with your life today?</td>
+<td>2002, 2008, 2018</td>
+</tr>
+<tr class="odd">
+<td><code>goodlife</code></td>
+<td>Do you think your standard of living will get better, worse, or stay about the same?</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td><code>opclout</code></td>
+<td>How important is having political connections for getting ahead in life?</td>
+<td>1987, 2021</td>
+</tr>
+<tr class="odd">
+<td><code>ophrddwrk</code></td>
+<td>How important is working hard for getting ahead in life?</td>
+<td>1987, 2021</td>
+</tr>
+<tr class="even">
+<td><code>opknow</code></td>
+<td>How important is knowing the right people for getting ahead in life?</td>
+<td>1987, 2000, 2021</td>
+</tr>
+<tr class="odd">
+<td><code>opwlth</code></td>
+<td>How important is coming from a wealthy family for getting ahead in life?</td>
+<td>1987, 2000, 2021</td>
+</tr>
+<tr class="even">
+<td><code>opeduc</code></td>
+<td>How important is having a good education for getting ahead in life?</td>
+<td>1987, 2021</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="missing-non-substantive-codes" class="level2">
+<h2 class="anchored" data-anchor-id="missing-non-substantive-codes">Missing &amp; Non-Substantive Codes</h2>
+<p>This section describes codes used to represent missing, inapplicable, or non-substantive responses in the GSS. Missing and non-substantive codes appear in survey data when a question does not apply to a respondent, was skipped, or could not be answered. These values are not errors.</p>
+<p>Some missing values occur because a question was never asked (for example, it was not included in a particular survey year), while others reflect meaningful responses such as “don’t know” or “not applicable.” In most cases, they should be excluded from summaries and visualizations, rather than treated as valid responses.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Meaning</th>
+<th>Notes &amp; When It Appears</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>NaN</code></td>
+<td>Missing value (numeric)</td>
+<td>Pandas missing value; appears in numeric columns</td>
+</tr>
+<tr class="even">
+<td><code>.i:  Inapplicable</code></td>
+<td>Inapplicable</td>
+<td>Question does not apply due to skip patterns or survey design</td>
+</tr>
+<tr class="odd">
+<td><code>.n:  No answer</code></td>
+<td>No answer</td>
+<td>Question was asked, but no valid response recorded</td>
+</tr>
+<tr class="even">
+<td><code>.d:  Do not Know/Cannot Choose</code></td>
+<td>Don’t know / cannot choose</td>
+<td>Respondent could not or would not provide a substantive answer</td>
+</tr>
+<tr class="odd">
+<td><code>.s:  Skipped on Web</code></td>
+<td>Skipped on web</td>
+<td>Respondent skipped the question in web-based surveys</td>
+</tr>
+<tr class="even">
+<td><code>.y:  Not available in this year</code></td>
+<td>Not asked in this year</td>
+<td>Variable not included in that survey year</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./dataset.html" class="pagination-link" aria-label="Dataset">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Dataset</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./tips.html" class="pagination-link" aria-label="Helpful Notebook Tips">
+        <span class="nav-page-text"><span class="chapter-title">Helpful Notebook Tips</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

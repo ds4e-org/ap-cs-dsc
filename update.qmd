@@ -1,7 +1,6 @@
 ---
 title: Updates Coming in 2027
 format: html
-website: false
 ---
 
 ## After the AP Data Science Capstone (AP Computer Science)
