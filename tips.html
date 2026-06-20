@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-06-20">
 
-<title>References – After the AP Data Science Capstone (AP Computer Science)</title>
+<title>Helpful Notebook Tips – After the AP Data Science Capstone (AP Computer Science)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -50,8 +51,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./partners.html" rel="next">
-<link href="./resources.html" rel="prev">
+<link href="./commands.html" rel="next">
+<link href="./var.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -102,7 +103,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html"><span class="chapter-title">References</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tips.html"><span class="chapter-title">Helpful Notebook Tips</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -149,7 +150,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tips.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Helpful Notebook Tips</span></a>
+  <a href="./tips.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Helpful Notebook Tips</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -164,7 +165,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">References</span></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">References</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -187,15 +188,30 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-jupyter-notebook" id="toc-introduction-to-jupyter-notebook" class="nav-link active" data-scroll-target="#introduction-to-jupyter-notebook">Introduction to Jupyter Notebook</a>
+  <ul>
+  <li><a href="#overview-of-a-jupyter-notebook" id="toc-overview-of-a-jupyter-notebook" class="nav-link" data-scroll-target="#overview-of-a-jupyter-notebook">Overview of a Jupyter Notebook</a></li>
+  </ul></li>
+  <li><a href="#code-text-cells" id="toc-code-text-cells" class="nav-link" data-scroll-target="#code-text-cells">Code &amp; Text Cells</a>
+  <ul>
+  <li><a href="#running-cells-in-a-jupyter-notebook" id="toc-running-cells-in-a-jupyter-notebook" class="nav-link" data-scroll-target="#running-cells-in-a-jupyter-notebook">Running Cells in a Jupyter Notebook</a></li>
+  <li><a href="#adding-cells" id="toc-adding-cells" class="nav-link" data-scroll-target="#adding-cells">Adding Cells</a></li>
+  <li><a href="#running-all-cells-from-top-down" id="toc-running-all-cells-from-top-down" class="nav-link" data-scroll-target="#running-all-cells-from-top-down">Running All Cells from Top Down</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">References</span></h1>
+<h1 class="title"><span class="chapter-title">Helpful Notebook Tips</span></h1>
 </div>
 
 
@@ -218,35 +234,102 @@ div.csl-indent {
 </header>
 
 
+<section id="introduction-to-jupyter-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-jupyter-notebook">Introduction to Jupyter Notebook</h2>
+<p>A Jupyter Notebook is a web-based interactive computing environment that supports programming in Python, R, and other languages <span class="citation" data-cites="stokes2025projectbased">(<a href="#ref-stokes2025projectbased" role="doc-biblioref">Stokes and Harding 2025</a>)</span>. In this project, you will use Jupyter Notebooks to write code, explore data, and document your analysis.</p>
+<section id="overview-of-a-jupyter-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="overview-of-a-jupyter-notebook">Overview of a Jupyter Notebook</h3>
+<p>Jupyter notebooks allow users to create and share documents that combine code, equations, visualizations, and formatted text <span class="citation" data-cites="stokes2025projectbased">(<a href="#ref-stokes2025projectbased" role="doc-biblioref">Stokes and Harding 2025</a>)</span>. They are commonly used for data science because users can write and run code step by step, document their thinking, and view results directly alongside the code that produced them.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Avoid Multiple Tabs">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avoid Multiple Tabs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Avoid opening multiple notebooks in separate tabs, as this can lead to memory overload, forcing you to restart your session.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="code-text-cells" class="level2">
+<h2 class="anchored" data-anchor-id="code-text-cells">Code &amp; Text Cells</h2>
+<p>A Jupyter Notebook has three types of cells. For this project, you will use only two:</p>
+<ul>
+<li><strong>Code</strong> cells for writing and running Python code</li>
+<li><strong>Markdown</strong> or text cells for entering written responses.</li>
+</ul>
+<section id="running-cells-in-a-jupyter-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="running-cells-in-a-jupyter-notebook">Running Cells in a Jupyter Notebook</h3>
+<p>In a Jupyter Notebook, you run cells one at a time to see code output or display formatted text. To run a cell, click inside the cell and then click the <strong>Run</strong> button in the toolbar at the top of the notebook.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/run.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Run</strong> button in the Jupyter toolbar</figcaption>
+</figure>
+</div>
+<p>You can also use keyboard shortcuts:</p>
+<ul>
+<li>PCs and Chromebooks: Hold <strong>Ctrl</strong> and press <strong>Enter</strong></li>
+<li>Macs: Hold <strong>Command (⌘)</strong> and press <strong>Enter</strong></li>
+</ul>
+</section>
+<section id="adding-cells" class="level3">
+<h3 class="anchored" data-anchor-id="adding-cells">Adding Cells</h3>
+<p>Use the <strong>+</strong> button in the top toolbar to add a new cell.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/add.png" class="img-fluid figure-img"></p>
+<figcaption><strong>+</strong> button in the Jupyter toolbar</figcaption>
+</figure>
+</div>
+<p>Then set the cell type as needed:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/code-markdown.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Code</strong> or <strong>Markdown</strong> button in the Jupyter toolbar</figcaption>
+</figure>
+</div>
+<ul>
+<li>Choose <strong>Code</strong> for code</li>
+<li>Choose <strong>Markdown</strong> for text</li>
+</ul>
+</section>
+<section id="running-all-cells-from-top-down" class="level3">
+<h3 class="anchored" data-anchor-id="running-all-cells-from-top-down">Running All Cells from Top Down</h3>
+<p>The <strong>Save</strong> button saves your code and text, but it <em>does not</em> save data stored in memory. Whenever you reopen a notebook, you should re-run all code cells from the top.</p>
+<p>To do this, go to <strong>Kernel</strong> → <strong>Restart &amp; Run All</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Restart &amp; Run All">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Restart &amp; Run All
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This option restarts the notebook and runs every cell in order from top to bottom. If a code cell encounters an error, execution will stop and later cells will not run.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/run-all.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Restart &amp; Run All</strong> button in the Jupyter toolbar</figcaption>
+</figure>
+</div>
+
+
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-hunter2007matplotlib" class="csl-entry" role="listitem">
-Hunter, John D. 2007. <span>“Matplotlib: A 2D Graphics
-Environment.”</span> <em>Computing in Science &amp; Engineering</em> 9
-(3): 90–95. <a href="https://matplotlib.org/">https://matplotlib.org/</a>.
-</div>
-<div id="ref-kim2018fivethirtyeight" class="csl-entry" role="listitem">
-Kim, Albert Y., Chester Ismay, and Jennifer Chunn. 2018. <span>“The
-Fivethirtyeight r Package: ’Tame Data’ Principles for Introductory
-Statistics and Data Science Courses.”</span> <em>Technology Innovations
-in Statistics Education</em> 11 (1). <a href="https://escholarship.org/uc/item/0rx1231m">https://escholarship.org/uc/item/0rx1231m</a>.
-</div>
-<div id="ref-McKinney2010" class="csl-entry" role="listitem">
-McKinney, Wes. 2010. <span>“Data Structures for Statistical Computing in
-Python.”</span> <em>Proceedings of the 9th Python in Science
-Conference</em>, 56–61. <a href="https://doi.org/10.25080/Majora-92bf1922-00a">https://doi.org/10.25080/Majora-92bf1922-00a</a>.
-</div>
 <div id="ref-stokes2025projectbased" class="csl-entry" role="listitem">
-Stokes, David J., and Mahmoud Harding. 2025. <span>“A Project-Based
-Approach to Introductory <span>R</span> and <span>Python</span> for Data
-Science.”</span> <a href="https://djstokes02.github.io/IntroRPython4DS/" class="uri">https://djstokes02.github.io/IntroRPython4DS/</a>.
-</div>
-<div id="ref-wickham2014tidydata" class="csl-entry" role="listitem">
-Wickham, Hadley. 2014. <span>“Tidy Data.”</span> <em>Journal of
-Statistical Software</em> 59. <a href="https://doi.org/10.18637/jss.v059.i10">https://doi.org/10.18637/jss.v059.i10</a>.
+Stokes, David J., and Mahmoud Harding. 2025. <span>“A Project-Based Approach to Introductory <span>R</span> and <span>Python</span> for Data Science.”</span> <a href="https://djstokes02.github.io/IntroRPython4DS/" class="uri">https://djstokes02.github.io/IntroRPython4DS/</a>.
 </div>
 </div>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -668,13 +751,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./resources.html" class="pagination-link" aria-label="Resources">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Resources</span></span>
+      <a href="./var.html" class="pagination-link" aria-label="Variables">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Variables</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./partners.html" class="pagination-link" aria-label="Partners">
-        <span class="nav-page-text"><span class="chapter-title">Partners</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./commands.html" class="pagination-link" aria-label="Useful Python Commands">
+        <span class="nav-page-text"><span class="chapter-title">Useful Python Commands</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
