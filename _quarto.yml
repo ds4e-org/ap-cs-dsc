@@ -1,5 +1,5 @@
 project:
-  type: website
+  type: book
   output-dir: docs
 
 book:
@@ -35,6 +35,8 @@ format:
       - brand
     toc: true
     toc-depth: 5
+  pdf:
+    documentclass: scrreprt
 
 date: today
     
