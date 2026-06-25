@@ -20,7 +20,7 @@ Since this is your first time using the capstone:
 
 - **Note:** Please make sure to remember your username. When logging in, Canvas may ask for your email, but it actually wants your username.
 
-2.  Enter the teacher join code: **LM667L**
+2.  Enter the teacher join code:
 
 3.  Enter the rest of your information.
 
